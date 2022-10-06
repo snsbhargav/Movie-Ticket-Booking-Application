@@ -1,0 +1,77 @@
+
+*{
+    color:white;
+    box-sizing: border-box;
+}
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,.8);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid white;;
+}
+img{
+    width:4.5rem;
+}
+a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: #000;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+    padding-bottom:.5rem;
+    border-bottom: 5px solid black;
+    transition: all ease-in-out 250ms;
+    letter-spacing: .12rem;
+    cursor: pointer;
+}
+a:hover{
+
+    transform: translateY(2px);
+    border-bottom: 4px solid #FA255E;
+    
+}
+.container{
+    margin-left: 3rem;
+    margin-top:1rem;
+    overflow: auto;
+}
+td,th{
+    padding: 1rem;
+    border:.5px solid white;
+}
+th{
+    background-color:#FA255E
+}
+td{
+    color: white;
+    background: rgba(0,0,0,.6);
+}
+button{
+    background-color: red;
+    /* max-width: 50%; */
+    font-size:.9rem;
+    font-weight:600;
+    padding: .2rem;
+    border-radius: .5rem;
+    letter-spacing: .12rem;
+    cursor: pointer;
+}
+.btn{
+    background-color: #1E90FF;
+}
+.whole{
+    position: relative;
+    background-image: url("../../assets/bookings.avif");
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

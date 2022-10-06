@@ -1,0 +1,16 @@
+<div class="bg" *ngIf="flag">
+  <div class="title">
+
+    <p>MOVIE TICKET BOOKING SYSTEM</p>
+    <button class="btn" routerLink="login" (click)="action()">SIGN IN</button>
+    <button routerLink="register" (click)="action()">SIGN UP</button>
+  </div>
+  
+</div>
+<router-outlet *ngIf="!flag"></router-outlet>
+
+
+
+<!-- <app-book-ticket></app-book-ticket> -->
+
+<!-- <app-my-bookings></app-my-bookings> -->

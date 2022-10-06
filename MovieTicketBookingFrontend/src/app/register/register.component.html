@@ -1,0 +1,14 @@
+
+<div class="body">
+    <p>REGISTER USER</p>
+    <div class="form">
+        <form>
+            <input class="inp" type="text" name="firstname" id="firstname" placeholder="First Name" [(ngModel)]="user.firstName">
+            <input class="inp" type="text" name="lastname" id="lastname" placeholder="Last Name" [(ngModel)]="user.lastName">
+            <input class="inp" type="number" name="age" id="age" placeholder="Age" [(ngModel)]="user.age">
+            <input class="inp" type="email" name="email" id="email" placeholder="Email" [(ngModel)]="user.mail">
+            <input class="inp" type="password" name="password" id="password" placeholder="Password" [(ngModel)]="user.password">
+            <button (click)="submit()">REGISTER</button>
+        </form>
+    </div>
+</div>

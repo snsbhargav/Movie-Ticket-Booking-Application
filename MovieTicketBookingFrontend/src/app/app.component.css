@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("../assets/index.jpg");
+    /* opacity: 60%; */
+  
+    /* Full height */
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5);
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title{
+    color:white;
+    text-align: center;
+    letter-spacing: 5px;
+    box-shadow: 5px;
+    font-size: 2.5rem;
+    background-color: rgba(0,0,0,.5);
+    padding:2rem;
+    font-weight: 700;
+  }
+  button{
+    width: 6rem;
+    height:1.7rem;
+    background-color: #FA255E;
+    color: white;
+    border-radius: 1rem;
+    border-color: #FA255E;
+    box-shadow:  black;
+    cursor: pointer;
+    transition: all ease-in 250ms;
+    margin-right: 1rem;
+  }
+  button:hover{
+    /* transform: translateY(-2px); */
+    border: 2px solid white;
+  }
+  btn{
+    margin-left: 30%;
+
+  }

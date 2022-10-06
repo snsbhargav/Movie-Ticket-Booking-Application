@@ -1,0 +1,84 @@
+*{
+    color:black;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: .5rem solid white;
+}
+img{
+    width:4.5rem;
+}
+a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: #000;
+    font-size:1rem;
+    font-weight:600;
+    color:#FA2742;
+    padding-bottom:.5rem;
+    border-bottom: 5px solid rgba(0,0,0,.8);
+    transition: all ease-in-out 250ms;
+    letter-spacing: .12rem;
+    cursor: pointer;
+}
+a:hover{
+    transform: translateY(2px);
+    border-bottom: 4px solid #FA255E;
+    
+}
+.whole{
+    height:100vh;
+    background-image: url("../../assets/booking.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    background: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin-left:15%;
+    margin-top:5%;
+    padding:1rem;
+    border-radius: 1rem;
+    border: 5px solid white;
+}
+.con{
+    margin-top:1rem;
+    display:flex;
+}
+.calbtn{
+    margin-left: 10%;
+    margin-top:3%;
+}
+span{
+    margin-right: 2rem;
+}
+button{
+    color: white;
+    background-color: #FA255E;
+    max-width: 50%;
+    font-size:.9rem;
+    font-weight:600;
+    padding: .2rem;
+    border-radius: .5rem;
+    letter-spacing: .12rem;
+    cursor: pointer;
+}
+label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+p{
+    color: white;
+}

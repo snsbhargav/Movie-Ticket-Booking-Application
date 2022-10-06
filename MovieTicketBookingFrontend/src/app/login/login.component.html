@@ -1,0 +1,14 @@
+
+<div class="body">
+    <p>MOVIE BOOKING SYSTEM</p>
+    <div class="form">
+        <form method="post">
+            <label class="data" for="username">UserId : </label><br><br>
+            <input class="inp" type="number" placeholder="User id" id="username" name="userId" [(ngModel)]="tempUser"><br><br>
+            <label for="password" class="data">Password : </label><br><br>
+            <input type="password" placeholder="Password" class="inp" id="password" name="password" [(ngModel)]="tempPassword"><br><br>
+            <button (click)="submit()">LOG IN</button>
+            <button (click)="register()" style="background-color: #1E90FF;">New User? REGISTER</button>
+        </form>
+    </div>
+</div>

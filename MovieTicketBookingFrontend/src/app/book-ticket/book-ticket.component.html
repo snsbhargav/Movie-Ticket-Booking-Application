@@ -1,0 +1,59 @@
+<div class="whole">
+    <nav class="nav">
+        <img src="../../assets/icon2.png" alt="">
+        <a (click)="movielink()">Movie</a>
+        <a (click)="mybooking()">My Bookings</a>
+        <a (click)="mydetails()">My Details</a>
+        <a (click)="logout()">LOG OUT</a>
+    </nav>
+    <div class="content">
+        <div class="con">
+            <label for="uid">Movie Id : &nbsp;&nbsp;</label>
+            <select name="uid" #uid>
+                <option value="uid" selected disabled>{{mov.id}}</option>
+            </select>
+        </div>
+        <div class="con">
+            <label for="uname">Movie Name :<span></span></label>
+            <select name="uname" id="">
+                <option value="uname" selected disabled>{{mov.title}}</option>
+            </select>        </div>
+        <div class="con">
+            <label for="sname">Screen Name :<span></span></label>
+            <select name="sname" id="">
+                <option value="sname" selected disabled>{{scr.name}}</option>
+            </select>        </div>
+        <div class="con">
+            <label for="dat">Select Date :<span></span></label>
+            <input type="date" name="dat" id="dat" required [(ngModel)]="booking.date">
+        </div>
+        <div class="con">
+            <label for="mtime">Select Time :<span></span></label>
+            <select name="mtime" id="mtime" required class="mtime" #mtime (change)="slot(mtime.value)">
+                <option value="default" selected disabled>Select Slot</option>
+                <option value="11:15">11:15</option>
+                <option value="14:30">14:30</option>
+                <option value="18:15">18:15</option>
+                <option value="21:30">21:30</option>
+            </select>
+        </div>
+        <div class="con">
+            <label for="seats">Seat Type :<span></span></label>
+            <select name="seats" id="seats" class="seats" required #seats (change)="seat(seats.value)">
+                <option value="seats">Select Seats</option>
+                <option value="platinum">Platinum Seat - Rs. {{scr.platinumSeats}}</option>
+                <option value="gold">Gold Seat - Rs. {{scr.goldSeat}}</option>
+                <option value="silver">Silver Seat - Rs. {{scr.silverSeats}}</option>
+            </select>
+        </div>
+        <div class="con">
+            <label for="count" >Number of Seats :</label>
+            <input type="number" name="count" id="count" required [(ngModel)]="count">
+        </div>
+        <div class="con calc">
+            <p>Amount : {{amount}}</p>
+            <button class="calbtn" (click)="calc()">Calculate</button>
+        </div>
+        <div class="con"><button (click)="submit()">Confirm & Book</button></div>
+    </div>
+</div>

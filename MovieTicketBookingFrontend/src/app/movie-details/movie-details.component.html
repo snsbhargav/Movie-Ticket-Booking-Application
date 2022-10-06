@@ -1,0 +1,28 @@
+<nav class="nav">
+    <img src="../../assets/icon2.png" alt="">
+    <a (click)="movielink()">Movie</a>
+        <a (click)="mybooking()">My Bookings</a>
+        <a (click)="mydetails()">My Details</a>
+        <a (click)="logout()">LOG OUT</a>
+
+</nav>
+<div class="main">
+
+    <div class="title">
+        <img class="poster" src="../../assets/login2.jpg">
+    </div>
+    <div class="table">
+        <p>Movie ID &nbsp;&emsp;&nbsp;&nbsp; : &nbsp; {{movie.id}}</p>
+        <p>Title &nbsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&nbsp;  : &emsp; {{movie.title}}</p>
+        <p>Release Date &nbsp;&emsp; : &emsp; {{movie.releaseDate}}</p>
+        <p>Language &nbsp;&emsp;&nbsp;&nbsp; : &emsp; {{movie.language}}</p>
+        <p>Certificate &emsp;&nbsp;&nbsp;&nbsp;&nbsp; : &emsp; {{movie.certificate}}</p>
+        <p>Rating &nbsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp; : &emsp; {{movie.rating}}</p>
+        <br><br>
+        <div class="btn">
+            <button class="goback" (click)="goback()">GO BACK</button>
+            <button (click)="book()">BOOK NOW</button>
+        </div>
+    </div>
+
+</div>

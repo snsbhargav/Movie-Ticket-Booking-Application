@@ -1,0 +1,37 @@
+<div class="whole">
+<nav class="nav">
+    <img src="../../assets/icon2.png" alt="">
+    <a (click)="movielink()">Movie</a>
+        <a (click)="mybooking()">My Bookings</a>
+        <a (click)="mydetails()">My Details</a>
+        <a (click)="logout()">LOG OUT</a>
+
+</nav>
+<div class="content">
+    <div class="selector">
+        <select name="movie" #select (change)="update(select.value)">
+            <option value="default" class="default" selected disabled>Type Of Theater</option>
+            <option value="INOX">INOX</option>
+            <option value="PVR">PVR</option>
+            <option value="Both">PVR & INOX</option>
+        </select>
+    </div>
+    <div >
+    <div class="table" style="overflow:auto">
+        <div class="movies" *ngFor="let m of movies">
+            <img class="name" src="../../assets/home.jpg">
+            <div class="but2">
+                <p class="title">{{m.title}}</p>
+                <p>{{m.language}} - {{m.certificate}}</p>
+            </div>
+            <div class="but">
+                <button (click)="movieDetails(m.id)" class="details">SHOW MORE</button>
+                <button (click)="book(m.id)">BOOK NOW</button>
+            </div> 
+        </div>
+    </div>
+    </div>
+    <h1 *ngIf="nodata">NO DATA FOUND!</h1>
+
+</div>
+</div>

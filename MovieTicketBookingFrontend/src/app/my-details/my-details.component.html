@@ -1,0 +1,22 @@
+<nav class="nav">
+    <img src="../../assets/icon2.png" alt="">
+    <a (click)="movielink()">Movie</a>
+        <a (click)="mybooking()">My Bookings</a>
+        <a (click)="mydetails()">My Details</a>
+        <a (click)="logout()">LOG OUT</a>
+
+</nav>
+<div class="main">
+
+    <div class="title">
+        <img class="poster" src="../../assets/login2.jpg">
+    </div>
+    <div class="table">
+        <p>User Id &nbsp;&emsp;&nbsp; : &nbsp; {{user.id}}</p>
+        <p>First Name &nbsp;&emsp;  : &emsp; {{user.firstName}}</p>
+        <p>Last Name &nbsp;&emsp; : &emsp; {{user.lastName}}</p>
+        <p>Age &nbsp;&emsp;&nbsp;&nbsp;&emsp; : &emsp; {{user.age}}</p>
+        <p>Email &emsp;&nbsp;&nbsp;&nbsp;&nbsp; : &emsp; {{user.mail}}</p>
+    </div>
+
+</div>
